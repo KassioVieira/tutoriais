@@ -27,11 +27,12 @@ Para desenvolvedores com conhecimento em desenvolvimento web, (HTML, CSS, JS) a 
 È uma sintaxe parecida com XML que permite que você escreva os componentes da UI. É possível fazer uma correlação entre alguns elementos do JSX com tags do HTML
 
 Exemplo:
-| HTML          | JSX           |
-| --------------|:-------------:|
-| div           | View          |
-| p             | Text          |
-| img           | Image         |
+
+| HTML          | JSX                        |
+| ------------- |:--------------------------:|
+| div           | View                       |
+| p             | Text                       |
+| img           | Image                      |
 
 para saber mais sobre JSX acesse a [documentação oficial ](https://reactjs.org/docs/introducing-jsx.html)
 
