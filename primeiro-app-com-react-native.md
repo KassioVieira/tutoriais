@@ -7,7 +7,7 @@
 Primeiro app com React-Native
 -
 
-Olá, no post anterior dei uma introdução sobre o que é React-Native, se você ainda não leu [clique aqui](https://github.com/KassioVieira/tutoriais/blob/master/conhecendo-react-native.md) para ler. Neste post vamos desenvolver um app simples aplicando os conceitos vistos anteriormente.
+Olá, no post anterior dei uma introdução sobre o que é React-Native, se você ainda não leu [clique aqui]() para ler. Neste post vamos desenvolver um app simples aplicando os conceitos vistos anteriormente.
 
 Vou considerar que você já configurou todo o ambiente para o desenvolvimento com React-Native, se ainda não configurou segue esse [tutorial](https://rocketseat.com.br/assets/files/ambiente-de-desenvolvimento-rn.pdf) e depois volte aqui, estarei esperando :clock8:. 
 
@@ -22,10 +22,14 @@ Após a execução do comando será criado uma pasta com o nome do nosso projeto
 #### Estrutura do projeto
 O nosso projeto tem  a seguinte estrutura
 
-![estrura](https://github.com/KassioVieira/tutoriais/blob/master/1.png "estrutura")
+Estrutura:
+
+![estrutura](./images/1.png "estrutura")
+
+As pastas `android` e `ios` contém os códigos referentes as plataformas, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
 
 #### Mão no código
-Abra o arquivo `App.js`, e escreva o seguinte código.
+No arquivo `App.js` você encontrará um código de exemplo gerado pelo React-Native, substitua o conteúdo pelo seguinte código.
 
 ```js
 import React, { Component } from 'react';
@@ -35,7 +39,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  Alert
 } from 'react-native';
 
 
@@ -70,7 +73,7 @@ para ver o resultado do nosso projeto, abra o seu emulador e na raiz do seu proj
   $ react-native run-android //ou run-ios
 ```
 Se tudo correu bem você deve ter este resultado.
-[aqui a imagem]()
+![estrutura](./images/3.png "estrutura")
 nada bonito não é mesmo :sweat_smile: ?
 
 Então vamos deixar mais agrádavel, para isso vamos utilizar o componente `StyleSheet`, importe ele em react-native
@@ -163,7 +166,9 @@ const styles = StyleSheet.create({
 })
 ```
 Como resultado teremos isto.
-[aqui a imagem]()
+![estrutura](./images/4.png "estrutura")
+
+Agora sim, ficou bonitão :laughing:
 
 Como você pode ver, podemos escrever o estilo do nosso componente com uma sintaxe muito próxima do CSS.
 
@@ -271,7 +276,10 @@ export default class Login extends Component {
 ...
 
 ```
+Note que usamos a propriedade `onPress` do `TouchableOpacity` para quando o botão for clicado chamar nossa função que valida as credencias.
 
+:confetti_ball: Comemore o seu primeiro app está pronto :tada: 
 
-Bom com isso nós temos o nosso primeiro app :sunglasses:, rsrs é apenas uma screen simples, mais é com vários passos pequenos que você chegará longe.
+#### Conclusão
+Bom com isso nós temos o nosso primeiro app :sunglasses:, rsrs é apenas uma screen simples, mais é o primeiro passo para chegar muito longe e dominar o mundo :earth_americas:.
 
