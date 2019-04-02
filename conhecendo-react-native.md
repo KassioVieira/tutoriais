@@ -20,19 +20,18 @@ Conhecendo o React-Native
 
 o **RN** é uma biblioteca baseada no já conhecido [React](https://reactjs.org/), e permite que você desenvolva aplicativos para as plataformas **Android** e **IOS** utilizando apenas **JavaScript**.
 
-Para desenvolvedores com conhecimento em desenvolvimento web, (HTML, CSS, JS) a curva de aprendizado é bem pequena. Se você está familiarizado com ES6 vai ter menos dificuldade caso não esteja dê uma olhadinha nesse curso gratuito da [RocketSeat](https://rocketseat.com.br/starter/curso-gratuito-javascript-es6), lá você também vai encontrar um [curso de RN gratuito](https://rocketseat.com.br/starter/curso-gratuito-react-native) que é muito bom.
+Para desenvolvedores com conhecimento em desenvolvimento web (HTML, CSS, JS) a curva de aprendizado é bem pequena, é bom também que você esteja familiarizado com ES6, caso não esteja assista esse curso gratuito da [RocketSeat](https://rocketseat.com.br/starter/curso-gratuito-javascript-es6), lá você também vai encontrar um [curso de RN gratuito](https://rocketseat.com.br/starter/curso-gratuito-react-native) que é muito bom.
 
 #### JSX
 
-É uma sintaxe parecida com XML que permite que você escreva os componentes da UI. É possível fazer uma correlação entre alguns elementos do JSX com tags do HTML
+È uma sintaxe parecida com XML que permite que você escreva os componentes da UI. É possível fazer uma correlação entre alguns elementos do JSX com tags do HTML
 
 Exemplo:
-
-| HTML          | JSX                        |
-| ------------- |:--------------------------:|
-| div           | View                       |
-| p             | Text                       |
-| img           | Image                      |
+| HTML          | JSX           |
+| ------------- |:-------------:|
+| div           | View          |
+| p             | Text          |
+| img           | Image         |
 
 para saber mais sobre JSX acesse a [documentação oficial ](https://reactjs.org/docs/introducing-jsx.html)
 
@@ -93,7 +92,7 @@ this.setState({name: 'novo valor'});
 É possível alterar o state de um componente a partir de outro? sim, é possível mais não é indicado, se você deseja ter um state que possa ser acessado por toda a aplicação você deve utilizar **Redux**, **MobX** ou um similar.
 
 ### Props
-O Props é outro tipo de dado com o qual você pode controlar o componente, mas diferente do state o prop é definido por um componente pai e passado para um filho, o filho não pode alterar diretamente o valor do props.
+O Props é outro tipo de dado com o qual você pode controlar o componente, mas diferente do state, o prop é definido por um componente pai e passado para um filho, o filho não pode alterar diretamente o valor do props.
 
 Exemplo:
 ```js
