@@ -24,7 +24,7 @@ O nosso projeto tem  a seguinte estrutura
 
 Estrutura:
 
-![estrutura](./images/1.png "estrutura")
+![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/3.png "estrutura")
 
 As pastas `android` e `ios` contém os códigos referentes as plataformas, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
 
@@ -73,7 +73,7 @@ para ver o resultado do nosso projeto, abra o seu emulador e na raiz do seu proj
   $ react-native run-android //ou run-ios
 ```
 Se tudo correu bem você deve ter este resultado.
-![estrutura](./images/3.png "estrutura")
+![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/4.png "estrutura")
 nada bonito não é mesmo :sweat_smile: ?
 
 Então vamos deixar mais agrádavel, para isso vamos utilizar o componente `StyleSheet`, importe ele em react-native
