@@ -24,7 +24,7 @@ Para desenvolvedores com conhecimento em desenvolvimento web, (HTML, CSS, JS) a 
 
 #### JSX
 
-È uma sintaxe parecida com XML que permite que você escreva os componentes da UI. É possível fazer uma correlação entre alguns elementos do JSX com tags do HTML
+É uma sintaxe parecida com XML que permite que você escreva os componentes da UI. É possível fazer uma correlação entre alguns elementos do JSX com tags do HTML
 
 Exemplo:
 
