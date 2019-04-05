@@ -11,7 +11,7 @@ Olá, no post anterior dei uma introdução sobre o que é React-Native, se voc�
 
 Vou considerar que você já configurou todo o ambiente para o desenvolvimento com React-Native, se ainda não configurou segue esse [tutorial](https://rocketseat.com.br/assets/files/ambiente-de-desenvolvimento-rn.pdf) e depois volte aqui, estarei esperando :clock8:. 
 
-Com o ambiente configurado e tudo funcionando vamos dar início ao nosso projeto, para isso no seu terminal execute este comando.
+Com o ambiente configurado e tudo funcionando vamos dar início ao nosso projeto, execute no seu terminal esse comando.
 
 ```sh
   $ react-native init helloWorld
@@ -24,7 +24,7 @@ O nosso projeto tem  a seguinte estrutura
 
 ![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/1.png "estrutura")
 
-As pastas `android` e `ios` contém os códigos referentes a cada plataforma, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
+As pastas `android` e `ios` contém os códigos referentes a cada plataforma e dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
 
 #### Mão no código
 No arquivo `App.js` você encontrará um código de exemplo gerado pelo React-Native, substitua o conteúdo pelo seguinte código.
@@ -63,9 +63,8 @@ export default class Login extends Component {
   }
 }
 ```
-Aqui nós utilizamos elementos do **JSX** para escrever o nosso layout, para conhecer todos os componentes disponíveis no react-native veja a [documentação](https://facebook.github.io/react-native/docs/components-and-apis#basic-components)
-
-para ver o resultado do nosso projeto abra o terminal na raiz do seu projeto e digite o seguinte comando
+Aqui nós utilizamos elementos do **JSX** para escrever o nosso layout, para conhecer todos os componentes disponíveis no react-native veja a [documentação](https://facebook.github.io/react-native/docs/components-and-apis#basic-components) e
+para ver o resultado abra o terminal na raiz do seu projeto e digite o seguinte comando
 
 ```js
   $ react-native run-android //ou run-ios
@@ -178,7 +177,7 @@ Com isso já temos o layout do nosso app, mas ao clicarmos no botão de login na
 
 vamos utilizar o **State** para receber o usuário e a senha e depois criaremos uma função para validar as credenciais.
 
-adicione o seguinte código ao nosso componente.
+Adicione o seguinte código ao nosso componente.
 
 ```js
 
@@ -197,7 +196,7 @@ export default class Login extends Component {
 }
 ```
 
-feito isso é necessário preencher o estado com o que for informado pelo usuário no `TextInput`, para isso usaremos a propriedade `onChangeText`, nosso código ficará assim.
+Feito isso é necessário preencher o estado com o que for informado pelo usuário no `TextInput`, para isso usaremos a propriedade `onChangeText`, nosso código ficará assim.
 
 ```js
 
@@ -235,7 +234,7 @@ export default class Login extends Component {
   ...
 ```
 
-Com isso o state vai receber o que for digitado no `TextInput`, agora vamos criar uma função que vai verificar se a credencial é válida. claro vamos fazer uma verificação simples, mas aqui você poderia enviar os dados para uma API e receber o resultado.
+Com isso o state vai receber o que for digitado no `TextInput`, agora vamos criar uma função que vai verificar se a credencial é válida. Claro que vamos fazer uma verificação simples, mas aqui você poderia enviar os dados para uma API e receber o resultado.
 
 
 ```js
@@ -274,10 +273,10 @@ export default class Login extends Component {
 ...
 
 ```
-Note que usamos a propriedade `onPress` do `TouchableOpacity` assim sempre o o usuário clicar no botão nossa função que valida as credenciais será chamada.
+Note que usamos a propriedade `onPress` do `TouchableOpacity` assim sempre que o usuário clicar no botão nossa função que valida as credenciais será chamada.
 
 :confetti_ball: Comemore o seu primeiro app está pronto :tada: 
 
 #### Conclusão
-Bom com isso nós temos o nosso primeiro app :sunglasses:, rsrs é apenas uma screen simples, mais é o primeiro passo para chegar muito longe e dominar o mundo :earth_americas:.
+Bom, com isso nós temos o nosso primeiro app :sunglasses:, rsrs é apenas uma screen simples, mas é o primeiro passo para chegar muito longe e dominar o mundo :earth_americas:.
 
