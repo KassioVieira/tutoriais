@@ -24,7 +24,7 @@ O nosso projeto tem  a seguinte estrutura
 
 ![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/1.png "estrutura")
 
-As pastas `android` e `ios` contém os códigos referentes as plataformas, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
+As pastas `android` e `ios` contém os códigos referentes a cada plataforma, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
 
 #### Mão no código
 No arquivo `App.js` você encontrará um código de exemplo gerado pelo React-Native, substitua o conteúdo pelo seguinte código.
@@ -63,15 +63,15 @@ export default class Login extends Component {
   }
 }
 ```
-Aqui nós utilizamos elementos do JSX para escrever o nosso layout, para conhecer todos os componentes disponíveis no react-native veja a [documentação](https://facebook.github.io/react-native/docs/components-and-apis#basic-components)
+Aqui nós utilizamos elementos do **JSX** para escrever o nosso layout, para conhecer todos os componentes disponíveis no react-native veja a [documentação](https://facebook.github.io/react-native/docs/components-and-apis#basic-components)
 
-para ver o resultado do nosso projeto, abra o seu emulador e na raiz do seu projeto no terminal digite o seguinte comando
+para ver o resultado do nosso projeto abra o terminal na raiz do seu projeto e digite o seguinte comando
 
 ```js
   $ react-native run-android //ou run-ios
 ```
 Se tudo correu bem você deve ter este resultado.
-![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/4.png "estrutura")
+![resultado1](https://github.com/KassioVieira/tutoriais/blob/master/3.png "resultado1")
 nada bonito não é mesmo :sweat_smile: ?
 
 Então vamos deixar mais agrádavel, para isso vamos utilizar o componente `StyleSheet`, importe ele em react-native
@@ -164,19 +164,19 @@ const styles = StyleSheet.create({
 })
 ```
 Como resultado teremos isto.
-![estrutura](./images/4.png "estrutura")
+![resultado4](https://github.com/KassioVieira/tutoriais/blob/master/4.png "resultado4")
 
 Agora sim, ficou bonitão :laughing:
 
 Como você pode ver, podemos escrever o estilo do nosso componente com uma sintaxe muito próxima do CSS.
 
-:exclamation: alerta de spoiler :exclamation:
+:exclamation: Alerta de Spoiler :exclamation:
 
 É possível utilizar CSS com o [Styled Components](https://www.styled-components.com/), mas isso é assunto para outro post.
 
 Com isso já temos o layout do nosso app, mas ao clicarmos no botão de login nada acontece, então vamos dar vida ao nosso app.
 
-vamos utilizar o state para receber o usuário e a senha e depois criaremos uma função para validar as credenciais.
+vamos utilizar o **State** para receber o usuário e a senha e depois criaremos uma função para validar as credenciais.
 
 adicione o seguinte código ao nosso componente.
 
@@ -197,7 +197,7 @@ export default class Login extends Component {
 }
 ```
 
-feito isso é necessário preencher o estado com o que for informado pelo usuário no input, para isso usaremos a propriedade `onChangeText` do `TextInput` nosso código ficará assim
+feito isso é necessário preencher o estado com o que for informado pelo usuário no `TextInput`, para isso usaremos a propriedade `onChangeText`, nosso código ficará assim.
 
 ```js
 
@@ -235,7 +235,7 @@ export default class Login extends Component {
   ...
 ```
 
-Com isso o state vai receber o que for digitado no TextInput, agora vamos criar uma função que vai verificar se a credencial é válida. claro vamos fazer uma verificação simples, mas aqui você poderia enviar os dados para uma API e receber o resultado.
+Com isso o state vai receber o que for digitado no `TextInput`, agora vamos criar uma função que vai verificar se a credencial é válida. claro vamos fazer uma verificação simples, mas aqui você poderia enviar os dados para uma API e receber o resultado.
 
 
 ```js
@@ -250,7 +250,7 @@ export default class Login extends Component {
   }
 
   checkLogin = () => {
-    if (this.state.user === '' && this.state.password === '1234') {
+    if (this.state.user === 'tutorial' && this.state.password === '1234') {
       alert('Usuário logado');
     } else {
       alert('Erro ao realizar login');
@@ -274,7 +274,7 @@ export default class Login extends Component {
 ...
 
 ```
-Note que usamos a propriedade `onPress` do `TouchableOpacity` para quando o botão for clicado chamar nossa função que valida as credencias.
+Note que usamos a propriedade `onPress` do `TouchableOpacity` assim sempre o o usuário clicar no botão nossa função que valida as credenciais será chamada.
 
 :confetti_ball: Comemore o seu primeiro app está pronto :tada: 
 
