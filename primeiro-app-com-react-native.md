@@ -24,7 +24,7 @@ O nosso projeto tem  a seguinte estrutura
 
 Estrutura:
 
-![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/3.png "estrutura")
+![estrutura](https://github.com/KassioVieira/tutoriais/blob/master/1.png "estrutura")
 
 As pastas `android` e `ios` contém os códigos referentes as plataformas, dentro de `node_modules` ficam nossas depedências que são gerenciadas pelo `package.json`
 
