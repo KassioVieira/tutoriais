@@ -6,11 +6,11 @@ date: 02/04/2019
 
 ## Styled Components com React-Native
 
-Olá pessoal, bom ultimamente comecei a utilizar a biblioteca [`styled-components`](https://www.styled-components.com/) e estou gostando muito de todo o poder que ela nos dar na criação dos nossos componentes. Então vamos fazer um pequeno projeto utilizando essa lib.
+Olá pessoal! Bom, ultimamente comecei a utilizar a biblioteca [`styled-components`](https://www.styled-components.com/) e estou gostando muito de todo o poder que ela nos dar na criação dos nossos componentes. Então vamos fazer um pequeno projeto utilizando essa lib.
 
 #### O que é o Styled Components :question:
 
-O styled components é uma biblioteca que permite que a gente escreva CSS dentro do JavaScript,pode parecer meio estranho, mas isto vai ajudar a você a componentizar sua aplicação, e claro você já deve conhecer a sintaxe do CSS, então a sua curva de aprendizado vai ser baixa.
+O styled components é uma biblioteca que permite que a gente escreva CSS dentro do JavaScript, pode parecer meio estranho, mas isto vai ajudar a você a componentizar sua aplicação, e claro você já deve conhecer a sintaxe do CSS, então a sua curva de aprendizado vai ser baixa.
 
 #### Hora de codificar
 
@@ -22,7 +22,7 @@ Agora vamos instalar essa biblioteca no nosso projeto.
 $ npm i styled-components
 ```
 
-Com isso vamos criar nosso primeiro component, para isso crie a seguinte estrutura na raiz do seu projeto `src/components/Button` e dentro dela adicione os arquivos `Button.js` e `styles.js`.
+Com isso vamos criar nosso primeiro componente, e para isso crie a seguinte estrutura na raiz do seu projeto `src/components/Button` e dentro dela adicione os arquivos `Button.js` e `styles.js`.
 
 Abra o arquivo `styles,js` e adicione o seguinte código.
 
@@ -47,11 +47,11 @@ export const TextButton = styled.Text`
 
 #### Entendo o código
 
-O `WrapButton` é um component assim como `TextButton`. Observando a forma como o componente foi criado, podemos notar que após o sinal de igual temos `styled.View` e `styled.Text` isso é usado para definir o componente que você irá estilizar isso é importante pois algumas propriedades dependem do componente que você está usando.
+O `WrapButton` é um componente assim como `TextButton`. Observando a forma como o componente foi criado, podemos notar que após o sinal de igual temos `styled.View` e `styled.Text` isso é usado para definir o componente que você irá estilizar, e isso é importante pois algumas propriedades dependem do componente que você está usando.
 
 Também é importante notar o uso de acentos graves **``** isso é o [Template String](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings) uma feature do javascript.
 
-Por fim também temos `props`no styled-component assim o nosso botão terá um background, texto e cor que pode ser passada dinâmicamente através da `props`. Na [documentação](https://www.styled-components.com/docs/basics#adapting-based-on-props) você encontra vários exemplos de como utilizar o `props` para adaptar o componente, vale a pena a leitura.
+Por fim também temos às `props` no styled-component, que utilizamos parq queo nosso botão ter propriedades dinâmicas passadas  através das `props`. Na [documentação](https://www.styled-components.com/docs/basics#adapting-based-on-props) você encontra diversos exemplos de como utilizar às `props` para adaptar o componente, vale a pena a leitura.
 
 Bom com isso podemos partir para o uso do nosso componente, então adicione o seguinte código no `Button.js`
 
@@ -110,4 +110,4 @@ Com isso temos nosso primeiro componente que utiliza essa biblioteca. Para prati
 
 #### Conclusão
 
-Neste artigo falei um pouco sobre o que é o Styled Component, e criamos um componente utilizando essa biblioteca, passando por alguns detalhes fundamentais sobre ela, existem mais coisas que você pode explorar dessa lib então bons estudos e até a próxima.
+Neste artigo falei um pouco sobre o que é o Styled Component, e criamos um componente utilizando essa biblioteca, passando por alguns detalhes fundamentais sobre ela, mas não é só isso existem mais coisas que você pode explorar dessa lib então bons estudos e até a próxima.
